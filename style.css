@@ -182,7 +182,7 @@ h1 {
 }
 
 .botao-form {
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    background: linear-gradient(45deg, var(--secundaria), var(--primaria));
     color: var(--claro);
     padding: 0.8rem;
     border-radius: 8px;
@@ -195,6 +195,34 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0px 4px 10px rgba(79, 70, 229, 0.3);
 }
+.link-contato {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--secundaria), var(--primaria));
+    color: var(--claro);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-contato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(79, 70, 229, 0.3);
+}
+transition: all 0.3s ease;
+    margin-top: 20px;
+    
+}
+
+.link-contato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(79, 70, 229, 0.3);
+}
+
 
 @media (max-width: 768px) {
     h1 {
