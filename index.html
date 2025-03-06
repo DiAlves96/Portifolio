@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dimario Alves</title>
+</head>
+
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/capa.png" alt="Capa do site" class="img-cabecalho">
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-text">
+            <p class="sobre-paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci eveniet quia eos quasi veritatis
+                enim, minima laudantium, vero hic ex. Voluptatem nisi doloremque iure architecto pariatur, velit dolorem
+                cumque!
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulos">Meus Projetos</h2>
+        <div class="projetos-text">
+            <a href="https://dialves96.github.io/Login/" target="_blank" class="projetos-card">
+                <img src="img-pj/pj-login.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">Projeto Login</h3>
+                    <p class="paragrafo-projeto">Projeto de login simples utilizando HTML, CSS e JavaScript.</p>
+                </div>
+            </a>
+    
+            <a href="
+            https://dialves96.github.io/previsaodotempo_react_deploy/" target="_blank" class="projetos-card">
+                <img src="img-pj/pj-previsao.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">Previsão do Tempo</h3>
+                    <p class="paragrafo-projeto">Aplicação que mostra a previsão do tempo baseada na localização do usuário.</p>
+                </div>
+            </a>
+    
+            <a href="https://dialves96.github.io/Projeto-Social01/" target="_blank" class="projetos-card">
+                <img src="img-pj/pj-social.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">Rede Social</h3>
+                    <p class="paragrafo-projeto">Projeto de uma rede social minimalista com interação entre usuários.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form id="formulario" class="formulario-contato" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
