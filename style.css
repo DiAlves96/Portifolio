@@ -469,6 +469,7 @@ h1 {
 }
 
 /* Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -479,16 +480,19 @@ h1 {
     }
 
     .projetos-text {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Ajuste para exibir uma coluna */
     }
 
     .menu {
         align-items: center;
         gap: 1rem;
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        padding: 1rem;
     }
 
     .slider {
         width: 100%;
+        height: auto;
     }
 
     .formulario {
@@ -506,5 +510,35 @@ h1 {
     
     .input-balao-up, .textarea-balao-up {
         font-size: 1rem;
+    }
+
+    .cabecalho {
+        min-height: 100vh; /* Ajuste para garantir que o cabeçalho ocupe toda a altura */
+        flex-direction: column; /* Garante que o conteúdo se ajuste na tela */
+        padding: 0 10px;
+    }
+
+    .imagem-cabecalho {
+        width: 100%; /* Imagem ocupando toda a largura da tela */
+        min-height: 50vh; /* Ajuste para caber corretamente na tela pequena */
+        filter: blur(5px); /* Reduz o desfoque para não comprometer o desempenho */
+    }
+
+    .sobre-text {
+        padding: 1rem; /* Reduz a margem para conteúdo menor */
+        max-width: 100%; /* Garante que o texto ocupe a tela de maneira adequada */
+    }
+
+    .titulo-projetos, .titulo-contatos {
+        font-size: 2rem;
+    }
+
+    .formulario-contato {
+        max-width: 100%;
+    }
+
+    .menu-link {
+        font-size: 1.2rem; /* Ajuste de tamanho de fonte */
+        padding: 0.5rem;
     }
 }
