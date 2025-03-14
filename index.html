@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Black_and_Cream_Clean_and_Simple_Bakery_Logo__3_-removebg-preview.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5f4acf1e35.js" crossorigin="anonymous"></script>
     <title>Dimario Alves</title>
 </head>
 
 <body>
-    <nav class="navegacao">
+     <nav class="navegacao">
         <ul class="menu">
 
             <li>
@@ -27,10 +29,10 @@
         </ul>
     </nav>
 
-    <main id="inicio" class="cabecalho">
+    <main id="inicio" class="cabecalho elemento">
         <img src="img/capa.png" alt="Capa do site" class="img-cabecalho">
     </main>
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre elemento">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-text">
             <p class="sobre-paragrafo">
@@ -45,54 +47,94 @@
         </div>
     </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulos">Meus Projetos</h2>
-        <div class="projetos-text">
-            <a href="https://dialves96.github.io/Login/" target="_blank" class="projetos-card">
-                <img src="img-pj/pj-login.png" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-projetos">
-                    <h3 class="info-projetos">Projeto Login</h3>
-                    <p class="paragrafo-projeto">Projeto de login simples utilizando HTML, CSS e JavaScript.</p>
-                </div>
-            </a>
+    <section id="projetos" class="projetos elemento">
+        <h1 class="titulo-projetos">Projetos</h1>
+        <div class="slider">
+            <div class="sliders">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
     
-            <a href="
-            https://dialves96.github.io/previsaodotempo_react_deploy/" target="_blank" class="projetos-card">
-                <img src="img-pj/pj-previsao.png" alt="Projeto 2" class="projetos-imagem">
-                <div class="caixa-projetos">
-                    <h3 class="info-projetos">Previsão do Tempo</h3>
-                    <p class="paragrafo-projeto">Aplicação que mostra a previsão do tempo baseada na localização do usuário.</p>
+                <div class="slide first">
+                    <a href="projetos.html">
+                        <img src="img/login.png" alt="login">
+                    </a>
+                    
                 </div>
-            </a>
     
-            <a href="https://dialves96.github.io/Projeto-Social01/" target="_blank" class="projetos-card">
-                <img src="img-pj/pj-social.png" alt="Projeto 3" class="projetos-imagem">
-                <div class="caixa-projetos">
-                    <h3 class="info-projetos">Rede Social</h3>
-                    <p class="paragrafo-projeto">Projeto de uma rede social minimalista com interação entre usuários.</p>
+                <div class="slide">
+                    <a href="projetos.html">
+                        <img src="img/previsao.png" alt="previsao">
+                    </a>
+                    
                 </div>
-            </a>
+    
+                <div class="slide">
+                    <a href="projetos.html">
+                        <img src="img/sociais.png" alt="social">
+                    </a>
+                   
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-bnt1"></div>
+                    <div class="auto-bnt2"></div>
+                    <div class="auto-bnt3"></div>
+                </div>
+            </div>
+    
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
         </div>
     </section>
     
+    </section>
+    
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contatos</h2>
-        <form id="formulario" class="formulario-contato" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
+    <section id="contatos" class="contatos elemento">
+    <h1 class="titulo-contatos">Contato</h1>
+        <div class="box-formulario">        
+            <div class="formulario">
+                <div class="title-form">
+                    
+                </div>
+    
+                <form action="https://formsubmit.co/dimarioalves_96@hotmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <span>
+                        <input type="text" class="input-balao-up" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
+                        <label for="nome"> <i class="fa-solid fa-user"></i> </label>
+                    </span>
+    
+                    <span>
+                        <input type="text" class="input-balao-up" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                        <label for="email"> <i class="fa-solid fa-envelope"></i></label>
+                    </span>
+    
+                    <span>
+                        <input type="text" class="input-balao-up" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
+                        <label for="assunto"> <i class="fa-solid fa-info"></i> </label>
+                    </span>
+    
+                    <span>
+                        <textarea type="text" class="textarea-balao-up" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
+                        <label for="mensagem"> <i class="fa-regular fa-comment-dots"></i></label>
+                    </span>
+    
+                    <div class="box-btn">
+                        <button type="submit" class="btn-envia zoom-shadow">
+                            <i class="icon icon-forward-1"> Enviar</i>
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
-            </div>
-            <button type="submit" class="botao-form">Enviar Whatsapp</button>
-        </form>
-
-        <div class="links-contato">
-            <a href="https://www.linkedin.com/in/dilmario-alves-a06a8119b/" target="_blank" class="link-contato">Meu LinkedIn</a>
-            <a href="mailto:dimarioalves_96@hotmail.com" class="link-contato">Envie um E-mail</a>
         </div>
     </section>
+    
     <script src="script.js"></script>
 
 </body>

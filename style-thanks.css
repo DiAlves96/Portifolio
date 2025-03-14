@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed; 
+    --escuro: #1693a5;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--maisEscuro);
+    color: var(--claro);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 100px;
+}
+
+.button img {
+    width: 100px;
+    height: auto;
+    background-color: var(--maisEscuro);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer; /* Garantindo que o cursor se torne um ponteiro */
+}
+
+.button img:hover {
+    transform: scale(1.2) translateY(-10px);
+    opacity: 0.8;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.paragrafo {
+    font-size: 1.5em;
+}
+
+/* Responsividade para telas menores (smartphones e tablets) */
+@media (max-width: 768px) {
+    .button {
+        gap: 100px; /* Ajuste do gap em telas menores */
+    }
+
+    .button img {
+        width: 80px; /* Reduzir o tamanho das imagens em telas menores */
+    }
+
+    .title {
+        font-size: 2.5rem; /* Ajuste do tamanho do título */
+    }
+
+    .paragrafo {
+        font-size: 1.2em; /* Ajuste do tamanho do parágrafo */
+    }
+}
+
+/* Responsividade para dispositivos móveis (smartphones) */
+@media (max-width: 480px) {
+    .button {
+        gap: 50px; /* Ajuste do gap em dispositivos móveis */
+    }
+
+    .button img {
+        width: 60px; /* Ajuste do tamanho das imagens em dispositivos móveis */
+    }
+
+    .title {
+        font-size: 2rem; /* Ajuste do tamanho do título */
+    }
+
+    .paragrafo {
+        font-size: 1em; /* Ajuste do tamanho do parágrafo */
+    }
+}
