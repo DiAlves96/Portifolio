@@ -161,7 +161,6 @@ body{
     transition: 0.7s;
 }
 
-/* Responsividade para telas menores (smartphones e tablets) */
 @media (max-width: 768px) {
     .navegacao {
         width: 100%;
@@ -199,9 +198,12 @@ body{
     }
 
     .arrow {
-        position: static;
+        position: absolute;
+        left: 50%; 
+        transform: translateX(-50%);
         gap: 5px;
         margin-top: 10px;
+        z-index: 10;
     }
 
     .arrow button {
@@ -209,7 +211,7 @@ body{
     }
 }
 
-/* Responsividade para dispositivos móveis (smartphones) */
+
 @media (max-width: 480px) {
     .container {
         height: auto;
@@ -243,12 +245,20 @@ body{
         height: 120px;
     }
 
+    .arrow{
+        position: relative;
+        gap: 5px;
+        margin-top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 100%;
+    }
+
     .arrow button {
         font-size: 0.9em;
     }
 }
 
-/* Responsividade para telas grandes (desktops maiores) */
 @media (min-width: 1200px) {
     .navegacao {
         width: 80%;
@@ -275,13 +285,20 @@ body{
         width: 135px;
         height: 200px;
     }
+    .arrow{
+        position: relative;
+        gap: 5px;
+        margin-top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 100%;
+    }
 
     .arrow button {
         font-size: 1.5em;
     }
 }
 
-/* Animações e outros efeitos */
 .container.next .thumb {
     animation: effectNextthumb 0.5s linear 1 forwards;
 }

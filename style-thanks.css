@@ -32,6 +32,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .button {
@@ -47,7 +48,7 @@ h1 {
     height: auto;
     background-color: var(--maisEscuro);
     transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer; /* Garantindo que o cursor se torne um ponteiro */
+    cursor: pointer;
 }
 
 .button img:hover {
@@ -64,40 +65,54 @@ h1 {
     font-size: 1.5em;
 }
 
-/* Responsividade para telas menores (smartphones e tablets) */
+
 @media (max-width: 768px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        top: -40px; 
+    }
+
     .button {
-        gap: 100px; /* Ajuste do gap em telas menores */
+        gap: 100px;
+        position: relative; 
+        top: -40px; 
     }
 
     .button img {
-        width: 80px; /* Reduzir o tamanho das imagens em telas menores */
+        width: 80px; 
     }
 
     .title {
-        font-size: 2.5rem; /* Ajuste do tamanho do título */
+        font-size: 2.5rem; 
+        position: relative; 
+        top: -40px; 
     }
 
     .paragrafo {
-        font-size: 1.2em; /* Ajuste do tamanho do parágrafo */
+        font-size: 0.5em; 
+        position: relative;  
     }
 }
 
-/* Responsividade para dispositivos móveis (smartphones) */
+
 @media (max-width: 480px) {
     .button {
-        gap: 50px; /* Ajuste do gap em dispositivos móveis */
+        gap: 50px; 
     }
 
     .button img {
-        width: 60px; /* Ajuste do tamanho das imagens em dispositivos móveis */
+        width: 60px;
     }
 
     .title {
-        font-size: 2rem; /* Ajuste do tamanho do título */
+        font-size: 2rem;
     }
 
     .paragrafo {
-        font-size: 1em; /* Ajuste do tamanho do parágrafo */
+        font-size: 0.5em; 
     }
 }
