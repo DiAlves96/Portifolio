@@ -535,6 +535,49 @@ h1 {
     }
 }
 
+@media (max-width: 480px) {
+  .elemento {
+      opacity: 1;
+      transform: translateX(0);
+      transition: none;
+  }
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+}
+
+
+.slider {
+width: 95%; 
+}
+
+.slide img{
+object-position: center;
+}
+
+.manual-navigation {
+width: 95%; 
+left: 50%;
+transform: translateX(-50%);
+margin-top: -50px; 
+}
+
+.navigation-auto{
+width: 95%; 
+left: 50%;
+transform: translateX(-50%);
+margin-top: -50px;
+}
+
+
+
+.menu {
+  align-items: center;
+  gap: 1rem;
+}
+
+
 @media (max-width: 768px) {
   .formulario {
       padding: 30px 5% 70px;
