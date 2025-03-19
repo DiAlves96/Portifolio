@@ -100,9 +100,6 @@ img {
     }
 }
 
-
-
-
 h1 {
     font-size: 3rem;
     color: var(--primaria);
@@ -168,10 +165,10 @@ h1 {
 
 .slide img{
   margin: 0 auto;
-  width: 800px; /* Largura fixa ou ajuste conforme necessário */
-  height: 400px; /* Defina a altura da caixa */
-  overflow: hidden; /* Garante que a imagem não ultrapasse a caixa */
-  border-radius: 20px; /* Borda arredondada */
+  width: 800px;
+  height: 400px; 
+  overflow: hidden;
+  border-radius: 20px; 
   position: relative;
 }
 
@@ -239,9 +236,6 @@ h1 {
     background-color: var(--escuro);
 }
 
-
-
-
 .formulario-contato {
     max-width: 500px;
     margin: 0 auto;
@@ -276,6 +270,7 @@ h1 {
     text-align: center;
     opacity: 0;
     animation: fadeIn 1s forwards;
+    
   }
   
   .formulario span {
@@ -513,7 +508,7 @@ h1 {
       object-position: center;
     }
 
-    .manual-navigation {
+   .manual-navigation {
       width: 95%; 
       left: 50%;
       transform: translateX(-50%);
@@ -570,11 +565,16 @@ transform: translateX(-50%);
 margin-top: -50px;
 }
 
-
+.box-btn {
+  margin-top: -30px;
+}
 
 .menu {
   align-items: center;
   gap: 1rem;
+}
+.menu-link {
+  font-size: 1em;
 }
 
 

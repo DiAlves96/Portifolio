@@ -77,3 +77,4 @@ const observer = new IntersectionObserver(observerCallback, {
 elementos.forEach(elemento => {
     observer.observe(elemento);
 });
+
