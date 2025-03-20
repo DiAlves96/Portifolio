@@ -111,6 +111,8 @@ body{
     bottom: 45px;
     display: flex;
     gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .thumb-item {

@@ -41,7 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = [
         "https://dialves96.github.io/Login/",
         "https://dialves96.github.io/previsaodotempo_react_deploy/",        
-        "https://dialves96.github.io/Projeto-Social01/" 
+        "https://dialves96.github.io/Projeto-Social01/",
+        "https://dialves96.github.io/Calculadora-IMC/"
     ];
 
     
