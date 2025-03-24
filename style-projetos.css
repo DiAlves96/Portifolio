@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #000;
+    background-color: #b9b9b9;
     color: #eee;
     font-size: 12px;
     margin: 0;
@@ -163,134 +163,6 @@ body{
     color: #000;
     transition: 0.7s;
 }
-
-@media (max-width: 480px) {
-    .navegacao {
-        width: 100%;
-        justify-content: center;
-        padding-left: 0;
-    }
-
-    .navegacao ul {
-        list-style-type: none; 
-        padding-left: 0; 
-        margin: 0; 
-    }
-
-    .menu-link {
-        font-size: 1.5em;
-        padding-left: 0;
-        margin-right: 0;
-        list-style-type: none; 
-        text-decoration: none;
-    }
-
-    .content {
-        top: 10%;
-        padding-left: 10%;
-        width: 80%;
-    }
-
-    .title {
-        font-size: 3em;
-    }
-
-    .paragrafo {
-        font-size: 1.5em;
-    }
-
-    .buttons {
-        grid-template-columns: 1fr 1fr;
-    }
-
-   
-    .thumb-item {
-        width: 100px;
-        height: 150px;
-        margin-left: auto;
-    }
-
-    .arrow {
-        position: absolute;
-        left: 50%; 
-        transform: translateX(-50%);
-        gap: 5px;
-        margin-top: 10px;
-        z-index: 10;
-    }
-
-    .arrow button {
-        font-size: 0.5em;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .container {
-        height: auto;
-    }
-
-    .content {
-        padding-left: 5%;
-    }
-
-    .title {
-        font-size: 2.5em;
-    }
-
-    .paragrafo {
-        font-size: 1.2em;
-    }
-
-    .buttons {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-    }
-
-    .thumb {
-        position: absolute;
-        left: 50%; 
-        bottom: 45px;
-        display: flex;
-        gap: 20px;
-        transform: translateX(-50%); 
-    }
-    
-    .thumb-item {
-        width: 100px; 
-        height: 150px; 
-        position: relative;
-        z-index: 2;
-    }
-    
-    .thumb-item img {
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
-        border-radius: 10px;
-        filter: brightness(80%);
-    }
-    
-
-    @media (max-width: 480px) {
-        .arrow {
-            position: absolute;
-            left: 78%; 
-            bottom: 210px; 
-            transform: translateX(-50%); 
-            margin-top: 0; 
-            display: block;
-            z-index: 10; 
-        }
-    }
-    
-
-    .arrow button {
-        font-size: 0.9em;
-    }
-}
-
-
 .container.next .thumb {
     animation: effectNextthumb 0.5s linear 1 forwards;
 }
@@ -377,5 +249,105 @@ body{
         width: 130px;
         height: 200px;
         border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .paragrafo {
+        font-size: 1.5em;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        height: 100vh;
+        width: 100%;
+        margin-top: -50px;
+        overflow: hidden;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .list-item {
+        overflow: hidden;
+        width: 116vw;
+        height: 116vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      .list-item img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+      }
+        
+    .content {
+        padding-left: 5%;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .paragrafo {
+        font-size: 1.2em;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .thumb {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center; 
+        align-items: flex-end; 
+        gap: 10px;
+        flex-wrap: nowrap;
+        width: fit-content; 
+    }
+
+    .thumb-item {
+        width: 80px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+    
+    .arrow {
+        left: 78%; 
+        bottom: 210px; 
+        transform: translateX(-50%); 
+    }
+
+    .arrow button {
+        font-size: 0.9em;
     }
 }

@@ -1,6 +1,6 @@
 function scrollProjects(direction) {
     const carousel = document.getElementById("projetosCarousel");
-    const scrollAmount = 320;
+    const scrollAmount = 800;
     carousel.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
 }
 
